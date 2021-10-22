@@ -1,9 +1,9 @@
 const linksSocialMedia = {
   github: 'luismork',
-  youtube: 'luis.mork',
-  facebook: 'luis.mork',
-  instagram: 'luis.mork',
-  twitter: 'luis.mork'
+  youtube: '',
+  facebook: '',
+  instagram: 'morkluis',
+  twitter: ''
 }
 
 function changeSocialMediaLinks() {
