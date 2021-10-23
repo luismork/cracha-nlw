@@ -24,7 +24,8 @@ body {
 }
 
 main {
-  background: url(images/background.png) no-repeat center/cover;
+  background: url(images/background.svg) no-repeat center/cover;
+  background-color: var(--black);
   width: 100vw;
   min-height: 812px;
   height: 100vh;
@@ -49,6 +50,19 @@ main {
   position: absolute;
   top: -15px;
   z-index: 1;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animation {
+  animation: loading 15s linear infinite;
 }
 
 .avatar > img {
@@ -92,10 +106,12 @@ ul {
   justify-content: center;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 720px) {
   main {
-    background: var(--black);
-    background-image: url(images/background-desktop.png) no-repeat center/cover;
+    background: url(images/background-desktop.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
   }
   .container {
     max-width: 358px;
@@ -129,5 +145,10 @@ ul {
   }
   .avatar span {
     top: 55px;
+  }
+  li:hover {
+    transform: scale(1.3);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
